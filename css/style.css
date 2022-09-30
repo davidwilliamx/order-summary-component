@@ -11,7 +11,7 @@
     --primary-font: 'Red Hat Display', sans-serif;
 }
 html {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: var(--primary-font);
     background-color: var(--p-pale-blue);
 }
@@ -27,16 +27,16 @@ body {
     min-height: 100vh;
 }
 .container {
-    width: 450px;
-    box-shadow: 0px 30px 50px -25px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    width: 28.125rem;
+    box-shadow: 0 1.875rem 3.125rem -1.5625rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.625rem;
 }
 
 .container img {
     width: 100%;
     display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
 }
 
 .text {
@@ -46,46 +46,46 @@ body {
     align-items: center;
     text-align: center;
     background-color: var(--p-white);
-    padding: 48px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding: 3rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 }
 .text h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 900;
     color: var(--n-dark-blue);
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 .text > p {
     font-size: 1rem;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.625rem;
     color: var(--n-desaturated-blue);
-    margin-bottom: 45px;
+    margin-bottom: 2.8125rem;
 }
 .text .price {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 57px;
+    margin-bottom: 3.5625rem;
 }
 .text .price .values {
-    margin-left: 20px;
-    margin-right: 95px;
+    margin-left: 1.25rem;
+    margin-right: 5.9375rem;
 }
 .text .price .values p:nth-child(1){
     font-size: 1rem;
     font-weight: 900;
     color: var(--n-dark-blue);
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 .text .price .values p:nth-child(2){
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 500;
     color: var(--n-desaturated-blue);
 }
 .text .price a {
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 900;
     color: var(--p-bright-blue);
 }
@@ -93,23 +93,23 @@ body {
     color: var(--p-soft-blue);
 }
 .text input {
-    width: 354px;
+    width: 22.125rem;
     border: 0;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 0.625rem;
+    padding: 0.9375rem;
     font-family: var(--primary-font);
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 900;
     color: var(--p-white);
     background-color: var(--p-bright-blue);
     cursor: pointer;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 .text input:hover {
     background-color: var(--p-soft-blue);
 }
 .text > a {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 900;
     color: var(--n-desaturated-blue);
     text-decoration: none;
@@ -118,37 +118,40 @@ body {
     color: var(--n-dark-blue);
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) { */
+@media (max-width: 26.5625rem) {
     .container {
-        width: 377px;
+        width: 23.5625rem;
     }
 }
-@media (max-width: 375px) {
+/* @media (max-width: 375px) { */
+@media (max-width: 23.4375rem) {
     body {
         background-image: url(/images/pattern-background-mobile.svg);
     }
     .container {
-        width: 327px;
+        width: 20.4375rem;
     }
     .text h1 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
     .text .price .values {
-        margin-right: 50px;
+        margin-right: 3.125rem;
     }
     .text .price .values p:nth-child(1) {
         font-size: 1rem;
     }
     .text input {
-        width: 279px;
+        width: 17.4375rem;
     }
     .text > a {
-        font-size: 13px;
+        font-size: 0.8125;
     }
 }
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) { */
+@media (max-width: 20rem) {
     .container {
-        width: 300px;
+        width: 18.75rem;
     }
 }
